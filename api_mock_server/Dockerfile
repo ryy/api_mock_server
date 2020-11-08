@@ -6,6 +6,6 @@ RUN mkdir /var/easymock
 WORKDIR /var/easymock
 COPY json /var/easymock
 
-EXPOSE 3001
+EXPOSE 80
 
-ENTRYPOINT ["easymock"]
+ENTRYPOINT ["easymock", "-p", "80"]

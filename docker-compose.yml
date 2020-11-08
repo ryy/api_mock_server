@@ -1,0 +1,7 @@
+version: '3'
+services:
+  api_mock_server:
+    build: ./api_mock_server
+    command: easymock -p 3001
+    ports:
+      - "3001:3001"
